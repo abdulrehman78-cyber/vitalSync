@@ -1,19 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const date = new Date().toLocaleDateString();
     const patientRecords = [];
     
     
     const vitalForm = document.querySelector("#vitalForm");
-
+    
     const inputBloodPressure  = vitalForm.querySelector("#inputBloodPressure");
     const inputHeartRate  = vitalForm.querySelector("#inputHeartRate");
     
     vitalForm.addEventListener('submit',(event)=>{
+        const date = new Date().toLocaleString();
         event.preventDefault();
         let inputHeartValue = inputHeartRate.value;
         let inputBloodValue = inputBloodPressure.value;
         patientRecords.push({date: date,heartRate : inputHeartValue,bloodPressure : inputBloodValue,status : "Alive"});
         insertData();
+        inputHeartRate.value = "";
+        inputBloodPressure.value = "";
     });
 
     function insertData(){
@@ -29,6 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
     }
-      
-
 });
