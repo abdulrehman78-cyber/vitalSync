@@ -1,3 +1,92 @@
 *{
     font-family: "DM Sans", sans-serif;
 }
+body.dark {
+    background-color: #1c1c1e;
+}
+body.dark .card {
+    background-color: #2c2c2e;
+    color: white;
+}
+body.dark .table-container {
+    background-color: #2c2c2e;
+    color: white;
+}
+
+body.dark .text-muted {
+    color: #d7d7dd !important;
+}
+body.dark .stat-value {
+    color: #ffffff;
+}
+body.dark tbody tr td {
+    color: #ffffff;
+    background-color: #2c2c2e;
+
+}
+body.dark tbody tr:hover td {
+    background-color: #3a3a3c !important;
+    color: #ffffff !important;
+}
+body.dark thead tr th{
+    background-color: #3a3a3c !important;
+    color: #ffffff !important;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+h1{
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+}
+.card{
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+}
+.col-4:nth-child(1) .card { border-left: 2px solid #F59E0B !important; }
+.col-4:nth-child(2) .card { border-left: 2px solid #dc1d1d  !important; }
+.col-4:nth-child(3) .card { border-left: 2px solid #3B82F6 !important; }
+.stat-value {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-top: 10px;
+}
+.table-container{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding:0rem;
+}
+tbody tr:hover td{
+    background-color:  #edeff1  !important;
+    cursor: pointer;
+}
+.badge-normal {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.badge-danger {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+body.dark .modal-content {
+    background-color: #2c2c2e;
+    color: white;
+}
+body.dark .form-control {
+    background-color: #3a3a3c;
+    color: white;
+    border-color: #48484a;
+}
