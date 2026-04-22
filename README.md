@@ -45,3 +45,5 @@ VitalSync/
 
 ---
 **Developed as a 6th Semester Web Development Project.**
+## Open using this link
+* **https://abdulrehman78-cyber.github.io/vitalSync/**
